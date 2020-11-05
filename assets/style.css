@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+  color: white;
+}
+/* Utility classes */
+.color_white{
+  color: white;
+}
+.text_center{
+  text-align: center;
+}
+.d-flex {
+  display: flex;
+}
+.flex_end{
+  display: flex;
+  justify-content: flex-end;
+}
+.flex_center{
+  display: flex;
+  justify-content: center;
+}
+.d-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.align_end{
+  display: flex;
+  align-items: flex-end;
+}
+.align_center{
+  display: flex;
+  align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.wrapper {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.margin_auto{
+  width: 90%;
+  margin: auto;
+}
+.item {
+  min-width: 150px;
+  background-color: red;
+  margin: 10px;
+}
+.img_box{
+  width: 150px;
+  background-size: cover;
+}
+.title_box{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+}
+.subtitle_box{
+  color: #7d7f84;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+}
+/* Utility classes */
+
+/* nav */
+.nav_top{
+  text-align: center;
+}
+.nav_top li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.nav_top a{
+  color: #7d7f84;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav_top a:hover{
+  color: white;
+}
+.nav_top li hr{
+  color: green;
+  width: 30px;
+  position: relative;
+  left: 50%;
+  top: 5px;
+  transform: translate( -50% );
+  display: none;
+}
+.nav_top li:hover hr{
+  display: block;
+}
+/* nav */
+
+/* header */
+#site_content{
+  height: calc(100% - 60px);
+}
+div .main_menu {
+  min-width: 250px;
+  background-color: black;
+}
+.covers_section {
+  background-color: #141922;
+  padding: 20px;;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 60px;
+  /* margin-top: 60px; */
+  width: calc(100% - 250px);
+}
+.subscribe_banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 250px);
+  height: 60px;
+  background-color: #080b12ba;
+}
+/* header */
+
+/* main_1 */
+.title_section{
+  padding: 30px 10px;
+}
+.title_section h2{
+  margin: 5px 0;
+}
+.title_section p{
+  color: #7d7f84;
+}
+/* main_1 */
+
+/* main_3 */
+#popular .img_box{
+  border-radius: 999px;
+}
+/* main_3 */
+
+/* Footer */
+footer#site_footer {
+    background-color: #282828;
+    height: 60px;
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; */
+}
+/* Footer */
