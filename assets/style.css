@@ -20,6 +20,13 @@ body {
 .flex_col{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.space_between{
+  justify-content: space-between;
+}
+.space_around{
+  justify-content: space-around;
 }
 .flex_col_start{
   display: flex;
@@ -131,7 +138,7 @@ body {
 .playlist{
   font-size: 15px;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .add_playlist{
   margin-top: 10px;
@@ -147,7 +154,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 .nome_playlist li{
   list-style: none;
@@ -165,7 +172,7 @@ body {
 
 /* bottom menu */
 .bottom_menu{
-
+  padding: 0 20px;
 }
 .download_app img{
   width: 30px;
@@ -178,7 +185,7 @@ body {
 .id_utente{
   margin-top: 10px;
 }
-.id_utente p{
+.id_utente p a{
   line-height: 50px;
   font-weight: bold;
 }
