@@ -4,17 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify clone</title>
-    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
     <div class="wrapper d-flex">
       <main id="site_content" class="d-flex">
-        <div class="main_menu">Sidebar</div>
-        <section class="covers_section">
+        <div class="main_menu">
+          <div class="logo_menu">
+            <img src="assets/img/Spotify.png" alt="">
+          </div>
+          <div class="top_menu flex_col">
+            <div class="home_menu d-flex">
+              <img class="img_menu" src="assets/img/home.png" alt="">
+              <a href="#">Home</a>
+            </div>
+            <div class="search_menu d-flex">
+              <img class="img_menu" src="assets/img/search.png" alt="">
+              <a href="#">Cerca</a>
+            </div>
+            <div class="library_menu d-flex">
+              <img class="img_menu" src="assets/img/libreria.png" alt="">
+              <a href="#">La tua libreria</a>
+            </div>
+          </div>
+          <div class="center_menu">
+            <div class="playlist margin_auto"> Playlist </div>
+            <div class="add_playlist margin_auto d-flex">
+              <div class="img_playlist"><i class="fas fa-plus-square"></i></div>
+              <a href="#">Crea Playlist</a>
+            </div>
+            <div class="container_playlist">
+              <div class="nome_playlist margin_auto">
+                <ul class="flex_col_around">
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bottom_menu flex_col_end margin_auto">
+            <div class="download_app d-flex">
+              <img src="assets/img/Download_icon.png" alt="">
+              <p>Installa app</p>
+            </div>
+            <hr>
+            <div class="id_utente d-flex">
+              <div><img src="assets/img/User_Icon.png" alt=""></div>
+              <p>John Doe</p>
+            </div>
+          </div>
+        </div>
 
+        <section class="covers_section">
           <div class="subscribe_banner flex_end">
-            lorem
+            <div class="btn_upgrade">
+              <a href="#">Effettua l'upgrade</a>
+            </div>
           </div>
 
           <nav class="nav_top color_white">
@@ -39,7 +90,7 @@
                 <div class="subtitle_box">Subtitle</div>
               </div>
               <div class="item">
-                <div><img class="img_box" src="assets/img/4-img-copertina.jpg" alt=""></div>
+                <div><img class="img_box" src="assets/img/strangerthinghs.jpg" alt=""></div>
                 <div class="title_box">Heavy Metal</div>
                 <div class="subtitle_box">Subtitle</div>
               </div>
