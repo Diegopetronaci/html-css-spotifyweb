@@ -103,7 +103,10 @@ body {
   padding: 5px;
 }
 .align_middle{
-    vertical-align: middle;
+  vertical-align: middle;
+}
+.p_5{
+  padding: 5px;
 }
 .pt_10{
   padding-top: 10px;
@@ -119,7 +122,7 @@ body {
   height: calc(100vh - 100px);
 }
 .main_menu {
-  min-width: 250px;
+  width: 250px;
   height: calc( 100%);
   background-color: black;
 }
@@ -175,14 +178,13 @@ body {
 }
 .nome_playlist li{
   list-style: none;
-  padding: 3px;
+  padding: 1px;
 }
 .nome_playlist li a{
-  font-size: 15px;
+  font-size: 12px;
   opacity: 0.5;
 }
 .nome_playlist li:hover a{
-  font-size: 15px;
   opacity: 1;
 }
 /* center menu */
@@ -191,23 +193,26 @@ body {
 .bottom_menu{
   padding: 0 20px;
 }
-.download_app img{
+.download_app img, .id_utente img{
   width: 30px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+.download_app img:hover, .id_utente img:hover{
+  cursor: pointer;
 }
 .download_app p{
   font-size: 12px;
 }
 .id_utente{
-  margin-top: 10px;
+  margin-top: 0px;
+}
+.id_utente img{
+  margin-top: 15px;
 }
 .id_utente p a{
   line-height: 50px;
   font-weight: bold;
-}
-.id_utente img{
-  width: 50px;
 }
 .bottom_menu hr{
   opacity: 0.5;
@@ -342,6 +347,9 @@ footer#site_footer {
   font-size: 13px;
   color: grey;
 }
+.iconcine_footer i{
+  padding: 5px;
+}
 /* brano_corrente */
 
 /* menu_play */
@@ -416,11 +424,68 @@ footer#site_footer {
   }
 }
 
-@media all and (max-width: 786px){
+@media all and (max-width: 768px){
 
-  /* sidebar */
-  
-  /* sidebar */
+  .covers_section {
+    width: calc(100% - 50px);
+  }
+  .subscribe_banner {
+    width: calc(100% - 50px);
+  }
+
+  /* top menu */
+  .main_menu {
+    width: 50px;
+    margin: 0px;
+  }
+  .main_menu a{
+    display: none;
+  }
+  .bottom_menu hr{
+    display: none;
+  }
+  .home_menu .img_menu, .search_menu .img_menu, .library_menu .img_menu{
+    height: 25px;
+    margin-left: 0px;
+  }
+  .main_menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    align-self: center;
+  }
+  /* top menu */
+
+  /* center menu */
+   .playlist{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    display: none;
+  }
+  .img_playlist{
+    display: none;
+  }
+
+  /* bottom menu */
+  .bottom_menu{
+    padding: 0 0px;
+  }
+  .download_app img, .id_utente img{
+    width: 30px;
+    margin-right: 0px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .download_app img:hover, .id_utente img:hover{
+    cursor: pointer;
+  }
+  .download_app p{
+    display: none;
+  }
+  .id_utente p a{
+    display: none;
+  }
 
 
   /* footer */
@@ -464,4 +529,56 @@ footer#site_footer {
     width: 50px;
   }
   /* footer */
+}
+
+@media all and (max-width: 593px){
+  #spotify_logo{
+    width: 100px;
+    margin-left: 10px;
+  }
+  .img_footer img{
+    height: 30px;
+  }
+
+  /* brano_corrente */
+
+  .nome_brano_corrente h6{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .nome_brano_corrente p{
+    font-size: 10px;
+    color: grey;
+  }
+  /* brano_corrente */
+
+  /* menu_play */
+  .menu_play{
+    width: 300px;
+    height: 100px;
+  }
+  .menu_play i{
+    font-size: 100%;
+    padding: 0px 7px;
+  }
+  .bar_main{
+    width: 100px;
+    height: 3px;
+  }
+  .progression_bar_main{
+    width: 10%;
+    height: 3px;
+  }
+  /* menu_play */
+
+  /* menu_audio */
+  .menu_audio i{
+    font-size: 13px;
+  }
+  .bar{
+    width: 50px;
+  }
+  .time_to_end, .time_to_start{
+    font-size: 10px;
+  }
 }
