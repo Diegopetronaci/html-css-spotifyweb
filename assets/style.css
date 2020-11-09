@@ -84,23 +84,25 @@ body {
 }
 .item {
   min-width: 150px;
+  max-width: 150px;
   background-color: red;
-  margin: 10px;
+  margin: 5px;
 }
 .img_box{
   width: 150px;
   background-size: cover;
 }
 .title_box{
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: bold;
-  padding: 5px;
+  padding: 10px 10px 8px;
 }
 .subtitle_box{
   color: #7d7f84;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: bold;
-  padding: 5px;
+  padding: 0 5px;
 }
 .align_middle{
   vertical-align: middle;
@@ -130,8 +132,12 @@ body {
   width: 250px;
 }
 #spotify_logo{
-  width: 150px;
+  width: 250px;
+  height: 90px;
   margin-left: 15px;
+  background-image: url(img/Spotify.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .home_menu, .search_menu, .library_menu{
   opacity: 0.5;
@@ -438,6 +444,13 @@ footer#site_footer {
     width: 50px;
     margin: 0px;
   }
+  #spotify_logo{
+    width: 50px;
+    height: 40px;
+    margin-left: 2px;
+    margin-top: 10px;
+    background-image: url(img/Spotify_2.png);
+  }
   .main_menu a{
     display: none;
   }
@@ -533,8 +546,11 @@ footer#site_footer {
 
 @media all and (max-width: 593px){
   #spotify_logo{
-    width: 100px;
-    margin-left: 10px;
+    width: 50px;
+    height: 40px;
+    margin-left: 2px;
+    margin-top: 10px;
+    background-image: url(img/Spotify_2.png);
   }
   .img_footer img{
     height: 30px;
