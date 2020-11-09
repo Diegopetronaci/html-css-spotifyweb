@@ -85,12 +85,23 @@ body {
 .item {
   min-width: 150px;
   max-width: 150px;
-  background-color: red;
-  margin: 5px;
+  margin: 10px;
+}
+.box{
+  position: relative;
 }
 .img_box{
   width: 150px;
   background-size: cover;
+}
+.layover, .layover_speciali{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.0;
+  width: 150px;
+  height: 150px;
+  background-color: black;
 }
 .title_box{
   font-size: 14px;
@@ -278,6 +289,7 @@ body {
   height: 60px;
   background-color: #080b12ba;
   padding: 15px 20px;
+  z-index: 1;
 }
 .btn_upgrade{
   color: white;
@@ -303,6 +315,27 @@ body {
 /* header */
 
 /* main_1 */
+.box .layover:hover, .box .layover_speciali:hover{
+  opacity: 0.7;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.box .layover_speciali:hover{
+  border-radius: 999px;
+}
+.layover a, .layover_speciali a{
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+}
+.layover a i, .layover_speciali a i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
 .title_section{
   padding: 30px 10px;
 }
